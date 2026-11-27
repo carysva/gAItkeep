@@ -21,4 +21,10 @@ Given a photo, gAItkeep classifies which of two brand catalogs (built on real pr
 Like most embedding-based systems, there's a one-time cost: the first request after a cold start is slower while the model loads into memory. Every query after that returns in a fraction of a second. Validated live against photos the model had never seen, correctly separating near-identical pieces by brand in real time.
 
 ## Why It Matters
-Th# gAItkeep
+The primary use case is everyday: giving people a fast, reliable way to identify a brand from a single photo, even when it looks nearly identical to something else on the rack. Brands and houses can use the same approach as a check on brand integrity as collections evolve season over season, a meaningful secondary benefit, though adoption at scale will come from solving that everyday moment.
+
+## Next Steps
+Expanding the brand catalog deliberately, training and validating accuracy on each addition before any expansion goes live. Longer term, extending to archival and pre-internet pieces, working toward a fully digitized record of fashion history.
+
+## Tech Stack
+Python, TensorFlow, NumPy, Pillow, FastAPI/Uvicorn, React + TypeScript (Vite)
